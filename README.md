@@ -8,3 +8,6 @@
 ## Component Structure 
 
 ![Image](https://i.imgur.com/R7tjKiV.png)
+
+## Browser Support  - Chrome
+
