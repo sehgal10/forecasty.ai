@@ -1,0 +1,53 @@
+.icon-container {
+  width: 200px;
+  background: linear-gradient(to bottom, #1f4f6b 39%, transparent 78%);
+  height: 200px;
+  margin-top: 50px;
+  border-radius: 70px 70px 0 0;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.icon-container .file-icon {
+  font-size: 100px;
+  color: #29e0f8;
+}
+
+.project-start-heading {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.line-break-container {
+  margin-top: 50px;
+}
+
+.line-break-container .line-break {
+  width: 100px;
+  height: 1px;
+  background: rgb(128, 128, 128, .16);
+}
+
+.upload-btn-wrapper {
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn {
+  border: 1px solid #29e0f8;
+  color: #29e0f8;
+  background-color: transparent;
+  padding: 8px 20px;
+  font-size: 16px;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}

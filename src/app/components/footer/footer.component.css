@@ -1,0 +1,16 @@
+.footer {
+  padding: 10px 30px;
+}
+
+.footer-text {
+  color: rgb(90, 90, 90);
+  font-size: 14px;
+}
+
+.footer-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgb(90, 90, 90);
+  margin: 0 20px;
+}

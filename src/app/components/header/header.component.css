@@ -1,0 +1,26 @@
+
+.logo {
+  color: #29e0f8;
+}
+
+.user {
+  background: #1a5570;
+  padding: 7px 10px;
+  color: #29e0f8;
+  border-radius: 10px;
+}
+
+.notification {
+  position: relative;
+}
+
+.notification .notification-icon {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  z-index: 1;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #29e0f8;
+}

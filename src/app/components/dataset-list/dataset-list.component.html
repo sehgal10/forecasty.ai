@@ -1,0 +1,35 @@
+<div class="heading-area d-flex flex-wrap justify-content-between">
+  <div class="heading-text h5 m-0 text-light">
+    Start by choosing from the <br>data repository
+  </div>
+  <div class="selected text-light mt-2 mt-sm-0"> {{ selectedRepositories.length }} selected</div>
+</div>
+<div class="search-bar">
+  <input [(ngModel)]="searchText" type="text" placeholder="Search" class="search-input" id="search-box" aria-describedby="search-box">
+  <span><i class="fa fa-search search-icon" aria-hidden="true"></i></span>
+</div>
+<div class="table-container">
+  <table class="text-light">
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Source</th>
+        <th>Last Update</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- list of data repositories available -->
+      <tr *ngFor="let repository of dataRepositoryList | filter : 'data' : searchText">
+        <td>
+          <label class="checkbox-container">
+            <input type="checkbox" (change)="onRepoSelectedUnselected(repository)"/>
+            <span class="checkmark"><i class="checkmark-icon fa fa-check" aria-hidden="true"></i></span>
+            {{ repository.data }}
+          </label>
+        </td>
+        <td>{{ repository.source }}</td>
+        <td>{{ repository.lastUpdate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
